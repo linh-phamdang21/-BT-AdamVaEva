@@ -33,12 +33,14 @@ let Human = function (name, gender, weight) {
     this.check_apple = function (Apple) {
         if (Apple.get_weight() > 0){
             return true;
-        }
+        } return false;
     }
     this.eat = function (checkApple,Apple) {
         if (checkApple){
             Apple.weight--;
             this.weight++;
+        } else {
+            console.log("Het tao mat roi!");
         }
     }
 }
